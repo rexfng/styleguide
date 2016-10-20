@@ -1,0 +1,54 @@
+// @include flex($justify-content, $align-items, $flex-direction){
+
+$flex-direction : row !default;
+$justify-content : flex-start !default;
+$align-items : flex-start !default;
+$flex-wrap : wrap !default;
+
+@mixin flex($justify-content, $align-items, $flex-direction, $flex-wrap){
+	@include display-flex;
+	@include flex-direction($flex-direction);
+	@include justify-content($justify-content);
+	@include align-items($align-items);
+	@include flex-wrap($flex-wrap);
+};
+
+@mixin grid($xxl, $xl, $l, $m, $s){
+	@extend %xxl-#{ $xxl };
+	@extend %xl-#{ $xl };
+	@extend %l-#{ $l };
+	@extend %m-#{ $m };
+	@extend %s-#{ $s };
+}
+@mixin mediaQuery($xxl, $xl, $l, $m, $s){
+	@if $xxl == 1{
+		$list : nth($breakpoints,1);
+		@media (max-width: #{nth($list,2)}) { 
+		  	@content ; 
+		}
+	}
+	@if $xl == 1{
+		$list : nth($breakpoints,2);
+		@media (max-width: #{nth($list,2)}) { 
+		  	@content ; 
+		}		
+	}
+	@if $l == 1{
+		$list : nth($breakpoints,3);
+		@media (max-width: #{nth($list,2)}) { 
+		  	@content ; 
+		}	
+	}
+	@if $m == 1{
+		$list : nth($breakpoints,4);
+		@media (max-width: #{nth($list,2)}) { 
+		  	@content ; 
+		}	
+	}
+	@if $s == 1{
+		$list : nth($breakpoints,5);
+		@media (max-width: #{nth($list,2)}) { 
+		  	@content ; 
+		}
+	}
+}

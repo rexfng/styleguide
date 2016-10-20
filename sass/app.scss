@@ -1,0 +1,77 @@
+@import "compass/reset";
+@import "compass";
+@import "variables";
+@import "global"; 
+@import "mixins";
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+ 
+/*********************
+1. HOMEPAGE - index.html
+*********************/
+.meta{
+	text-align: center;
+	text-decoration: underline;
+}
+header {
+	padding:0 5%;
+	@include flex(center,center,row, wrap);
+	& > div, 
+	& > h1{
+		@include grid(2,2,2,1,1);
+	}
+}
+main{
+	@include flex(flex-start,flex-start,row, wrap);
+	@include mediaQuery(0,0,0,1,1){
+		@include flex(flex-start,flex-start,column, wrap);
+	}
+	.section-1, .section-2{
+		@include grid(2,2,2,1,1);
+	}
+	.background{
+		padding:0 5%;
+		.box{
+			height:400px;
+			@include grid(1,1,1,1,1);
+			@include flex(space-around, center, row, wrap);
+			& div{
+				width:calc(50% - 50px);
+				height:50%;
+				color:white;
+				@include flex(center, center, row, wrap);
+
+				&:nth-child(1){
+					background-color: $color-1;
+				}
+				&:nth-child(2){
+					background-color: $color-2;
+				}
+			}
+		}
+		@include mediaQuery(0,0,1,1,1){
+			& div{
+				width: 150px;
+				height: 150px;
+			}
+		}
+		@include mediaQuery(0,0,0,1,1){
+			@include flex-direction(column);
+		}
+	}
+	.heading-style{
+		padding: 0 5%;
+		@include grid(1,1,1,1,1);
+	}
+	.list-style{
+		padding: 0 5%;
+		ul{
+			list-style: circle;
+		}
+		ol{
+			list-style: decimal;
+		}
+	}
+}
+
+

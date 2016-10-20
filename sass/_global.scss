@@ -1,0 +1,59 @@
+//
+//
+//GLOBAL STYLE SETTINGS
+//
+//
+
+
+//font style
+@each $font in $fontStyles{
+	#{nth($font,1)}{
+		font-family: nth($font,2);
+		font-weight: nth($font,3);
+		font-size: nth($font,4);
+		color: nth($font,5);
+		line-height: nth($font,6);
+		letter-spacing: nth($font,7);
+		margin: nth($font,8);
+		padding: nth($font,9);
+	}
+}
+//dropcap 
+blockquote > span{
+	float: left; 
+	color: $accent-color; 
+	font-size: 3em; 
+	line-height: .1em; 
+	padding: 0 .1em 0 0 ;
+	font-family: $font-1; 
+	font-weight: 900;
+	&:before{
+		content:'';
+		margin-top:3em;
+	}
+}
+//grid class
+
+$breakpoints: false !default; // check if $breakpoints is defined
+$border-box-mode: false !default; // check if $breakpoints is defined
+
+@if $breakpoints{
+	@each $list in $breakpoints{
+		$gridMax : nth($list,3);
+		@media screen and (max-width: nth($list, 2)) {
+			@for $i from 1 through $gridMax{
+				%#{ nth($list, 1) }-#{ $i }{
+					width: 100% / $i;
+					@if $border-box-mode{
+						box-sizing:border-box;
+					}
+				};		
+			}
+			@for $i from 1 through $gridMax{
+				%#{ nth($list, 1) }-offset-#{ $i }{
+					margin-left: 100% / $i;
+				};		
+			}
+		}
+	}
+}

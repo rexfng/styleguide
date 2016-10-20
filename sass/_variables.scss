@@ -1,0 +1,59 @@
+/////////////////////////
+//					   //
+//		  COLOR    	   //
+//					   //
+/////////////////////////
+$color-1:rgba(0,0,0,0.5);
+$color-2:red;
+$accent-color:red;
+
+/////////////////////////
+//					   //
+//     TYPOGRAPHY      //
+//					   //
+/////////////////////////
+$font-1:'Roboto', sans-serif;
+$font-2:'Merriweather', serif;
+$fontStyles : (
+	('h1', $font-1, 900, 2.5em, $color-1, normal, normal, 5px 0, 10px 0),
+	('h2', $font-1, 700, 2em, $color-1, normal, normal, 5px 0, 10px 0),
+	('h3', $font-1, 500, 1.75em, $color-1, normal, normal, 5px 0, 10px 0),
+	('h4', $font-1, 400, 1.5em, $color-1, normal, normal, 5px 0, 10px 0),
+	('h5', $font-1, 300, 1.25em, $color-1, normal, normal, 5px 0, 10px 0),
+	('h6', $font-1, 100, 1em, $color-1, normal, normal, 5px 0, 10px 0),
+	('p', $font-2, 200, 1em, $color-1, normal, normal, 5px 0, 5px 0 0),
+	('strong', $font-2, 400, 1em, $color-1, normal, normal, 5px 0, 5px 0 0),
+	('blockquote', $font-2, 400, 2em, $color-1, normal, normal, 2em 0 .5em, 0 ),
+	('li', $font-2, 400, 1em, $color-1, normal, normal, 0 0 10px 50px, 0 ),
+);
+
+// fontstyles : 
+// 	((
+// 		tag, 
+// 		font-family, 
+// 		font-weight, 
+// 		font-size, 
+// 		color, 
+// 		line-height, 
+// 		letter-spacing, 
+// 		margin, 
+// 		padding
+// 	))
+
+/////////////////////////
+//					   //
+//  GRID & BREAKPOINTS //
+//					   //
+/////////////////////////
+//number of columns in this grid, you can customize it for every screen size below by changing the grid size value!
+// ie. 	('xxl', 2560px, $gridSize/ 2),
+
+$gridSize : 12 ; 
+$breakpoints : (
+	('xxl', 2560px, $gridSize),
+	('xl', 1440px, $gridSize),
+	('l', 1024px, $gridSize),
+	('m', 768px, $gridSize),
+	('s', 425px, $gridSize)
+);
+$border-box-mode : true;
