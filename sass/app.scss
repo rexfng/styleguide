@@ -12,7 +12,51 @@
 .meta{
 	text-decoration: underline;
 }
+.tag{
+	width: 100%;
+	height:60px;
+	position: fixed;
+	top:0;
+	right:0;
+	padding:0;
+	@include flex(center, center, row, wrap);
+	background-color:$color-z-200;
+	& div{
+		color:$black;
+		font-family: $font-1;
+		padding: 0 10px;
+			@include mediaQuery(1,0,0,0,0){
+				&:nth-child(1){
+					font-weight: 900;
+				}
+				font-weight: 200;
+			}
+			@include mediaQuery(0,1,0,0,0){
+				&:nth-child(2){
+					font-weight: 900;
+				}
+				font-weight: 200;
+			}
+			@include mediaQuery(0,0,1,0,0){
+				&:nth-child(3){
+					font-weight: 900;
+				}
+			}
+			@include mediaQuery(0,0,0,1,0){
+				&:nth-child(4){
+					font-weight: 900;
+				}
+			}
+			@include mediaQuery(0,0,0,0,1){
+				&:nth-child(5){
+					font-weight: 900;
+				}
+			}
+	}
+
+}
 header {
+	margin-top: 60px;
 	padding:0 5%;
 	@include flex(center,center,row, wrap);
 	& > div, 
@@ -67,9 +111,9 @@ main{
 			& div.color-a{
 				@include grid(4,4,2,2,1);
 				text-align: center;
-				& div:nth-child(1){ background-color: $color-a-900; }
-				& div:nth-child(2){ background-color: $color-a-800; }
-				& div:nth-child(3){ background-color: $color-a-700; }
+				& div:nth-child(1){ background-color: $color-a-900; color:$white;}
+				& div:nth-child(2){ background-color: $color-a-800; color:$white;}
+				& div:nth-child(3){ background-color: $color-a-700; color:$white;}
 				& div:nth-child(4){ background-color: $color-a-600; }
 				& div:nth-child(5){ background-color: $color-a-500; }
 				& div:nth-child(6){ background-color: $color-a-400; }
@@ -80,9 +124,9 @@ main{
 			& div.color-b{
 				@include grid(4,4,2,2,1);
 				text-align: center;
-				& div:nth-child(1){ background-color: $color-b-900; }
-				& div:nth-child(2){ background-color: $color-b-800; }
-				& div:nth-child(3){ background-color: $color-b-700; }
+				& div:nth-child(1){ background-color: $color-b-900; color:$white;}
+				& div:nth-child(2){ background-color: $color-b-800; color:$white;}
+				& div:nth-child(3){ background-color: $color-b-700; color:$white;}
 				& div:nth-child(4){ background-color: $color-b-600; }
 				& div:nth-child(5){ background-color: $color-b-500; }
 				& div:nth-child(6){ background-color: $color-b-400; }
@@ -93,9 +137,9 @@ main{
 			& div.color-c{
 				@include grid(4,4,2,2,1);
 				text-align: center;
-				& div:nth-child(1){ background-color: $color-c-900; }
-				& div:nth-child(2){ background-color: $color-c-800; }
-				& div:nth-child(3){ background-color: $color-c-700; }
+				& div:nth-child(1){ background-color: $color-c-900; color:$white;}
+				& div:nth-child(2){ background-color: $color-c-800; color:$white;}
+				& div:nth-child(3){ background-color: $color-c-700; color:$white;}
 				& div:nth-child(4){ background-color: $color-c-600; }
 				& div:nth-child(5){ background-color: $color-c-500; }
 				& div:nth-child(6){ background-color: $color-c-400; }
@@ -106,9 +150,9 @@ main{
 			& div.color-z{
 				@include grid(4,4,2,2,1);
 				text-align: center;
-				& div:nth-child(1){ background-color: $color-z-900; }
-				& div:nth-child(2){ background-color: $color-z-800; }
-				& div:nth-child(3){ background-color: $color-z-700; }
+				& div:nth-child(1){ background-color: $color-z-900; color:$white;}
+				& div:nth-child(2){ background-color: $color-z-800; color:$white;}
+				& div:nth-child(3){ background-color: $color-z-700; color:$white;}
 				& div:nth-child(4){ background-color: $color-z-600; }
 				& div:nth-child(5){ background-color: $color-z-500; }
 				& div:nth-child(6){ background-color: $color-z-400; }

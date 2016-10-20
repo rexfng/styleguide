@@ -22,32 +22,36 @@ $flex-wrap : wrap !default;
 }
 @mixin mediaQuery($xxl, $xl, $l, $m, $s){
 	@if $xxl == 1{
-		$list : nth($breakpoints,1);
-		@media (max-width: #{nth($list,2)}) { 
+		$max : nth($breakpoints,1);
+		$min : nth($breakpoints,2);
+		@media only screen and (max-width: #{nth($max,2)}) and (min-width: #{nth($min,2)}) { 
 		  	@content ; 
 		}
 	}
 	@if $xl == 1{
-		$list : nth($breakpoints,2);
-		@media (max-width: #{nth($list,2)}) { 
+		$max : nth($breakpoints,2);
+		$min : nth($breakpoints,3);
+		@media only screen and (max-width: #{nth($max,2)}) and (min-width: #{nth($min,2)}) { 
 		  	@content ; 
 		}		
 	}
 	@if $l == 1{
-		$list : nth($breakpoints,3);
-		@media (max-width: #{nth($list,2)}) { 
+		$max : nth($breakpoints,3);
+		$min : nth($breakpoints,4);
+		@media only screen and (max-width: #{nth($max,2)}) and (min-width: #{nth($min,2)}) { 
 		  	@content ; 
 		}	
 	}
 	@if $m == 1{
-		$list : nth($breakpoints,4);
-		@media (max-width: #{nth($list,2)}) { 
+		$max : nth($breakpoints,4);
+		$min : nth($breakpoints,5);
+		@media only screen and (max-width: #{nth($max,2)}) and (min-width: #{nth($min,2)}) { 
 		  	@content ; 
 		}	
 	}
 	@if $s == 1{
-		$list : nth($breakpoints,5);
-		@media (max-width: #{nth($list,2)}) { 
+		$max : nth($breakpoints,5);
+		@media only screen and (max-width: #{nth($max,2)}) { 
 		  	@content ; 
 		}
 	}

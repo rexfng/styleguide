@@ -137,8 +137,8 @@ p {
 }
 
 strong {
-  font-family: "Merriweather", serif;
-  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
   font-size: 1em;
   color: #424242;
   line-height: normal;
@@ -246,7 +246,64 @@ blockquote > span {
   text-decoration: underline;
 }
 
+.tag {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 0;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  background-color: #EEEEEE;
+}
+.tag div {
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  padding: 0 10px;
+}
+@media only screen and (max-width: 2560px) and (min-width: 1440px) {
+  .tag div {
+    font-weight: 200;
+  }
+  .tag div:nth-child(1) {
+    font-weight: 900;
+  }
+}
+@media only screen and (max-width: 1440px) and (min-width: 1024px) {
+  .tag div {
+    font-weight: 200;
+  }
+  .tag div:nth-child(2) {
+    font-weight: 900;
+  }
+}
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  .tag div:nth-child(3) {
+    font-weight: 900;
+  }
+}
+@media only screen and (max-width: 768px) and (min-width: 425px) {
+  .tag div:nth-child(4) {
+    font-weight: 900;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .tag div:nth-child(5) {
+    font-weight: 900;
+  }
+}
+
 header {
+  margin-top: 60px;
   padding: 0 5%;
   display: -webkit-flex;
   display: flex;
@@ -272,7 +329,7 @@ main {
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) and (min-width: 425px) {
   main {
     display: -webkit-flex;
     display: flex;
@@ -286,7 +343,7 @@ main {
     flex-wrap: wrap;
   }
 }
-@media (max-width: 425px) {
+@media only screen and (max-width: 425px) {
   main {
     display: -webkit-flex;
     display: flex;
@@ -358,12 +415,15 @@ main .swatches .color-wrapper div.color-a {
 }
 main .swatches .color-wrapper div.color-a div:nth-child(1) {
   background-color: #880E4F;
+  color: #FFFFFF;
 }
 main .swatches .color-wrapper div.color-a div:nth-child(2) {
   background-color: #AD1457;
+  color: #FFFFFF;
 }
 main .swatches .color-wrapper div.color-a div:nth-child(3) {
   background-color: #C2185B;
+  color: #FFFFFF;
 }
 main .swatches .color-wrapper div.color-a div:nth-child(4) {
   background-color: #D81B60;
@@ -388,12 +448,15 @@ main .swatches .color-wrapper div.color-b {
 }
 main .swatches .color-wrapper div.color-b div:nth-child(1) {
   background-color: #1A237E;
+  color: #FFFFFF;
 }
 main .swatches .color-wrapper div.color-b div:nth-child(2) {
   background-color: #283593;
+  color: #FFFFFF;
 }
 main .swatches .color-wrapper div.color-b div:nth-child(3) {
   background-color: #303F9F;
+  color: #FFFFFF;
 }
 main .swatches .color-wrapper div.color-b div:nth-child(4) {
   background-color: #3949AB;
@@ -418,12 +481,15 @@ main .swatches .color-wrapper div.color-c {
 }
 main .swatches .color-wrapper div.color-c div:nth-child(1) {
   background-color: #004D40;
+  color: #FFFFFF;
 }
 main .swatches .color-wrapper div.color-c div:nth-child(2) {
   background-color: #00695C;
+  color: #FFFFFF;
 }
 main .swatches .color-wrapper div.color-c div:nth-child(3) {
   background-color: #00796B;
+  color: #FFFFFF;
 }
 main .swatches .color-wrapper div.color-c div:nth-child(4) {
   background-color: #00897B;
@@ -448,12 +514,15 @@ main .swatches .color-wrapper div.color-z {
 }
 main .swatches .color-wrapper div.color-z div:nth-child(1) {
   background-color: #212121;
+  color: #FFFFFF;
 }
 main .swatches .color-wrapper div.color-z div:nth-child(2) {
   background-color: #424242;
+  color: #FFFFFF;
 }
 main .swatches .color-wrapper div.color-z div:nth-child(3) {
   background-color: #616161;
+  color: #FFFFFF;
 }
 main .swatches .color-wrapper div.color-z div:nth-child(4) {
   background-color: #757575;
@@ -473,13 +542,13 @@ main .swatches .color-wrapper div.color-z div:nth-child(8) {
 main .swatches .color-wrapper div.color-z div:nth-child(9) {
   background-color: #F5F5F5;
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) and (min-width: 425px) {
   main .swatches {
     -webkit-flex-direction: column;
     flex-direction: column;
   }
 }
-@media (max-width: 425px) {
+@media only screen and (max-width: 425px) {
   main .swatches {
     -webkit-flex-direction: column;
     flex-direction: column;
