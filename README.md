@@ -3,13 +3,13 @@ Description - This boilerplate uses Compass SCSS framework with a few helpful mi
 ## Folder Structure
 ```
 | — sass
-	 | —  \_variables.scss_
-	 | —  \_global.scss_
-	 | —  \_mixins.scss_
-	 | —  app.scss_
+	 | —  _variables.scss
+	 | —  _global.scss
+	 | —  _mixins.scss
+	 | —  app.scss
 | —  app.css
 | — config.rb
-| — index.html_
+| — index.html
 ```
 
 ## Folder Structure Explained
