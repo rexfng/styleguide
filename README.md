@@ -75,5 +75,3 @@ $border-box-mode - “true” to  gives box-sizing: border-box to all grid prope
 `	@media (max-width: 425px) { `
 `		// Your Code;`
 `	}	`
-		
-	
