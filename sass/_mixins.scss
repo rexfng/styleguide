@@ -14,11 +14,11 @@ $flex-wrap : wrap !default;
 };
 
 @mixin grid($xxl, $xl, $l, $m, $s){
-	@extend %xxl-#{ $xxl };
-	@extend %xl-#{ $xl };
-	@extend %l-#{ $l };
-	@extend %m-#{ $m };
-	@extend %s-#{ $s };
+	@extend .xxl-#{ $xxl };
+	@extend .xl-#{ $xl };
+	@extend .l-#{ $l };
+	@extend .m-#{ $m };
+	@extend .s-#{ $s };
 }
 @mixin mediaQuery($xxl, $xl, $l, $m, $s){
 	@if $xxl == 1{

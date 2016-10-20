@@ -42,16 +42,16 @@ $border-box-mode: false !default; // check if $breakpoints is defined
 		$gridMax : nth($list,3);
 		@media screen and (max-width: nth($list, 2)) {
 			@for $i from 1 through $gridMax{
-				%#{ nth($list, 1) }-#{ $i }{
-					width: 100% / $i;
+				.#{ nth($list, 1) }-#{ $i }{
+					width: 100% / $gridMax * $i;
 					@if $border-box-mode{
 						box-sizing:border-box;
 					}
 				};		
 			}
 			@for $i from 1 through $gridMax{
-				%#{ nth($list, 1) }-offset-#{ $i }{
-					margin-left: 100% / $i;
+				.#{ nth($list, 1) }-offset-#{ $i }{
+					margin-left: 100% / $gridMax * $i;
 				};		
 			}
 		}

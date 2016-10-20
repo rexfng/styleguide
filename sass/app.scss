@@ -61,7 +61,7 @@ header {
 	@include flex(center,center,row, wrap);
 	& > div, 
 	& > h1{
-		@include grid(2,2,2,1,1);
+		@include grid(6,6,6,12,12);
 	}
 }
 main{
@@ -70,18 +70,18 @@ main{
 		@include flex(flex-start,flex-start,column, wrap);
 	}
 	.section-1, .section-2{
-		@include grid(2,2,2,1,1);
+		@include grid(6,6,6,12,12);
 	}
 	.heading-style{
 		padding: 0 5%;
 		.font-list{
-			@include grid(1,1,1,1,1);
+			@include grid(12,12,12,12,12);
 			@include display-flex();
 			@include flex-wrap(wrap);
 		}
 		.heading-list{
 			text-align: center;
-				@include grid(2,1,1,1,1);
+				@include grid(6,12,12,12,12);
 		}
 		.heading-list.font-2{
 			h1,h2,h3,h4,h5,h6{
@@ -109,7 +109,7 @@ main{
 				@include flex(center, center, row, wrap);
 			}
 			& div.color-a{
-				@include grid(4,4,2,2,1);
+				@include grid(6,6,6,6,12);
 				text-align: center;
 				& div:nth-child(1){ background-color: $color-a-900; color:$white;}
 				& div:nth-child(2){ background-color: $color-a-800; color:$white;}
@@ -122,7 +122,7 @@ main{
 				& div:nth-child(9){ background-color: $color-a-100; }
 			}
 			& div.color-b{
-				@include grid(4,4,2,2,1);
+				@include grid(6,6,6,6,12);
 				text-align: center;
 				& div:nth-child(1){ background-color: $color-b-900; color:$white;}
 				& div:nth-child(2){ background-color: $color-b-800; color:$white;}
@@ -135,7 +135,7 @@ main{
 				& div:nth-child(9){ background-color: $color-b-100; }
 			}
 			& div.color-c{
-				@include grid(4,4,2,2,1);
+				@include grid(6,6,6,6,12);
 				text-align: center;
 				& div:nth-child(1){ background-color: $color-c-900; color:$white;}
 				& div:nth-child(2){ background-color: $color-c-800; color:$white;}
@@ -148,7 +148,7 @@ main{
 				& div:nth-child(9){ background-color: $color-c-100; }
 			}
 			& div.color-z{
-				@include grid(4,4,2,2,1);
+				@include grid(6,6,6,6,12);
 				text-align: center;
 				& div:nth-child(1){ background-color: $color-z-900; color:$white;}
 				& div:nth-child(2){ background-color: $color-z-800; color:$white;}
