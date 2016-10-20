@@ -1,11 +1,15 @@
-//
-//
-//GLOBAL STYLE SETTINGS
-//
-//
+/////////////////////////
+//					   //
+//GLOBAL STYLE SETTINGS//
+//					   //
+/////////////////////////
 
 
 //font style
+ul{
+	margin-bottom:1em;
+}
+
 @each $font in $fontStyles{
 	#{nth($font,1)}{
 		font-family: nth($font,2);
@@ -20,17 +24,13 @@
 }
 //dropcap 
 blockquote > span{
-	float: left; 
-	color: $accent-color; 
+	color: $color-a; 
 	font-size: 3em; 
 	line-height: .1em; 
 	padding: 0 .1em 0 0 ;
 	font-family: $font-1; 
 	font-weight: 900;
-	&:before{
-		content:'';
-		margin-top:3em;
-	}
+	vertical-align: top;
 }
 //grid class
 

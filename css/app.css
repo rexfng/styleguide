@@ -55,11 +55,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
+ul {
+  margin-bottom: 1em;
+}
+
 h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-size: 2.5em;
-  color: rgba(0, 0, 0, 0.5);
+  color: #424242;
   line-height: normal;
   letter-spacing: normal;
   margin: 5px 0;
@@ -70,7 +74,7 @@ h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 2em;
-  color: rgba(0, 0, 0, 0.5);
+  color: #424242;
   line-height: normal;
   letter-spacing: normal;
   margin: 5px 0;
@@ -81,7 +85,7 @@ h3 {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 1.75em;
-  color: rgba(0, 0, 0, 0.5);
+  color: #424242;
   line-height: normal;
   letter-spacing: normal;
   margin: 5px 0;
@@ -92,7 +96,7 @@ h4 {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 1.5em;
-  color: rgba(0, 0, 0, 0.5);
+  color: #424242;
   line-height: normal;
   letter-spacing: normal;
   margin: 5px 0;
@@ -103,7 +107,7 @@ h5 {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 1.25em;
-  color: rgba(0, 0, 0, 0.5);
+  color: #424242;
   line-height: normal;
   letter-spacing: normal;
   margin: 5px 0;
@@ -114,7 +118,7 @@ h6 {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
   font-size: 1em;
-  color: rgba(0, 0, 0, 0.5);
+  color: #424242;
   line-height: normal;
   letter-spacing: normal;
   margin: 5px 0;
@@ -125,7 +129,7 @@ p {
   font-family: "Merriweather", serif;
   font-weight: 200;
   font-size: 1em;
-  color: rgba(0, 0, 0, 0.5);
+  color: #424242;
   line-height: normal;
   letter-spacing: normal;
   margin: 5px 0;
@@ -136,7 +140,7 @@ strong {
   font-family: "Merriweather", serif;
   font-weight: 400;
   font-size: 1em;
-  color: rgba(0, 0, 0, 0.5);
+  color: #424242;
   line-height: normal;
   letter-spacing: normal;
   margin: 5px 0;
@@ -147,7 +151,7 @@ blockquote {
   font-family: "Merriweather", serif;
   font-weight: 400;
   font-size: 2em;
-  color: rgba(0, 0, 0, 0.5);
+  color: #424242;
   line-height: normal;
   letter-spacing: normal;
   margin: 2em 0 0.5em;
@@ -158,7 +162,7 @@ li {
   font-family: "Merriweather", serif;
   font-weight: 400;
   font-size: 1em;
-  color: rgba(0, 0, 0, 0.5);
+  color: #424242;
   line-height: normal;
   letter-spacing: normal;
   margin: 0 0 10px 50px;
@@ -166,32 +170,33 @@ li {
 }
 
 blockquote > span {
-  float: left;
-  color: red;
+  color: #E91E63;
   font-size: 3em;
   line-height: .1em;
   padding: 0 0.1em 0 0;
   font-family: "Roboto", sans-serif;
   font-weight: 900;
-}
-blockquote > span:before {
-  content: '';
-  margin-top: 3em;
+  vertical-align: top;
 }
 
 @media screen and (max-width: 2560px) {
-  main .background .box, main .heading-style {
+  main .heading-style .font-list {
     width: 100%;
     box-sizing: border-box;
   }
 
-  header > div, header > h1, main .section-1, main .section-2 {
+  header > div, header > h1, main .section-1, main .section-2, main .heading-style .heading-list {
     width: 50%;
+    box-sizing: border-box;
+  }
+
+  main .swatches .color-wrapper div.color-a, main .swatches .color-wrapper div.color-b, main .swatches .color-wrapper div.color-c, main .swatches .color-wrapper div.color-z {
+    width: 25%;
     box-sizing: border-box;
   }
 }
 @media screen and (max-width: 1440px) {
-  main .background .box, main .heading-style {
+  main .heading-style .font-list, main .heading-style .heading-list {
     width: 100%;
     box-sizing: border-box;
   }
@@ -200,26 +205,36 @@ blockquote > span:before {
     width: 50%;
     box-sizing: border-box;
   }
+
+  main .swatches .color-wrapper div.color-a, main .swatches .color-wrapper div.color-b, main .swatches .color-wrapper div.color-c, main .swatches .color-wrapper div.color-z {
+    width: 25%;
+    box-sizing: border-box;
+  }
 }
 @media screen and (max-width: 1024px) {
-  main .background .box, main .heading-style {
+  main .heading-style .font-list, main .heading-style .heading-list {
     width: 100%;
     box-sizing: border-box;
   }
 
-  header > div, header > h1, main .section-1, main .section-2 {
+  header > div, header > h1, main .section-1, main .section-2, main .swatches .color-wrapper div.color-a, main .swatches .color-wrapper div.color-b, main .swatches .color-wrapper div.color-c, main .swatches .color-wrapper div.color-z {
     width: 50%;
     box-sizing: border-box;
   }
 }
 @media screen and (max-width: 768px) {
-  header > div, header > h1, main .section-1, main .section-2, main .background .box, main .heading-style {
+  header > div, header > h1, main .section-1, main .section-2, main .heading-style .font-list, main .heading-style .heading-list {
     width: 100%;
+    box-sizing: border-box;
+  }
+
+  main .swatches .color-wrapper div.color-a, main .swatches .color-wrapper div.color-b, main .swatches .color-wrapper div.color-c, main .swatches .color-wrapper div.color-z {
+    width: 50%;
     box-sizing: border-box;
   }
 }
 @media screen and (max-width: 425px) {
-  header > div, header > h1, main .section-1, main .section-2, main .background .box, main .heading-style {
+  header > div, header > h1, main .section-1, main .section-2, main .heading-style .font-list, main .heading-style .heading-list, main .swatches .color-wrapper div.color-a, main .swatches .color-wrapper div.color-b, main .swatches .color-wrapper div.color-c, main .swatches .color-wrapper div.color-z {
     width: 100%;
     box-sizing: border-box;
   }
@@ -228,7 +243,6 @@ blockquote > span:before {
 1. HOMEPAGE - index.html
 *********************/
 .meta {
-  text-align: center;
   text-decoration: underline;
 }
 
@@ -286,26 +300,48 @@ main {
     flex-wrap: wrap;
   }
 }
-main .background {
+main .heading-style {
   padding: 0 5%;
 }
-main .background .box {
-  height: 400px;
+main .heading-style .font-list {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+main .heading-style .heading-list {
+  text-align: center;
+}
+main .heading-style .heading-list.font-2 h1, main .heading-style .heading-list.font-2 h2, main .heading-style .heading-list.font-2 h3, main .heading-style .heading-list.font-2 h4, main .heading-style .heading-list.font-2 h5, main .heading-style .heading-list.font-2 h6 {
+  font-family: "Merriweather", serif;
+}
+main .list-style {
+  padding: 0 5%;
+}
+main .list-style ul {
+  list-style: disc;
+}
+main .list-style ol {
+  list-style: decimal;
+}
+main .swatches {
+  padding: 0 5%;
+}
+main .swatches .color-wrapper {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: row;
   flex-direction: row;
-  -webkit-justify-content: space-around;
-  justify-content: space-around;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
   -webkit-align-items: center;
   align-items: center;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
 }
-main .background .box div {
-  width: calc(50% - 50px);
-  height: 50%;
-  color: white;
+main .swatches .color-wrapper div div {
+  height: 50px;
+  font-family: "Roboto", sans-serif;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: row;
@@ -317,51 +353,135 @@ main .background .box div {
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
 }
-main .background .box div:nth-child(1) {
-  background-color: rgba(0, 0, 0, 0.5);
+main .swatches .color-wrapper div.color-a {
+  text-align: center;
 }
-main .background .box div:nth-child(2) {
-  background-color: red;
+main .swatches .color-wrapper div.color-a div:nth-child(1) {
+  background-color: #880E4F;
 }
-@media (max-width: 1024px) {
-  main .background div {
-    width: 150px;
-    height: 150px;
-  }
+main .swatches .color-wrapper div.color-a div:nth-child(2) {
+  background-color: #AD1457;
+}
+main .swatches .color-wrapper div.color-a div:nth-child(3) {
+  background-color: #C2185B;
+}
+main .swatches .color-wrapper div.color-a div:nth-child(4) {
+  background-color: #D81B60;
+}
+main .swatches .color-wrapper div.color-a div:nth-child(5) {
+  background-color: #E91E63;
+}
+main .swatches .color-wrapper div.color-a div:nth-child(6) {
+  background-color: #EC407A;
+}
+main .swatches .color-wrapper div.color-a div:nth-child(7) {
+  background-color: #F06292;
+}
+main .swatches .color-wrapper div.color-a div:nth-child(8) {
+  background-color: #F48FB1;
+}
+main .swatches .color-wrapper div.color-a div:nth-child(9) {
+  background-color: #F8BBD0;
+}
+main .swatches .color-wrapper div.color-b {
+  text-align: center;
+}
+main .swatches .color-wrapper div.color-b div:nth-child(1) {
+  background-color: #1A237E;
+}
+main .swatches .color-wrapper div.color-b div:nth-child(2) {
+  background-color: #283593;
+}
+main .swatches .color-wrapper div.color-b div:nth-child(3) {
+  background-color: #303F9F;
+}
+main .swatches .color-wrapper div.color-b div:nth-child(4) {
+  background-color: #3949AB;
+}
+main .swatches .color-wrapper div.color-b div:nth-child(5) {
+  background-color: #3F51B5;
+}
+main .swatches .color-wrapper div.color-b div:nth-child(6) {
+  background-color: #5C6BC0;
+}
+main .swatches .color-wrapper div.color-b div:nth-child(7) {
+  background-color: #7986CB;
+}
+main .swatches .color-wrapper div.color-b div:nth-child(8) {
+  background-color: #9FA8DA;
+}
+main .swatches .color-wrapper div.color-b div:nth-child(9) {
+  background-color: #C5CAE9;
+}
+main .swatches .color-wrapper div.color-c {
+  text-align: center;
+}
+main .swatches .color-wrapper div.color-c div:nth-child(1) {
+  background-color: #004D40;
+}
+main .swatches .color-wrapper div.color-c div:nth-child(2) {
+  background-color: #00695C;
+}
+main .swatches .color-wrapper div.color-c div:nth-child(3) {
+  background-color: #00796B;
+}
+main .swatches .color-wrapper div.color-c div:nth-child(4) {
+  background-color: #00897B;
+}
+main .swatches .color-wrapper div.color-c div:nth-child(5) {
+  background-color: #009688;
+}
+main .swatches .color-wrapper div.color-c div:nth-child(6) {
+  background-color: #26A69A;
+}
+main .swatches .color-wrapper div.color-c div:nth-child(7) {
+  background-color: #4DB6AC;
+}
+main .swatches .color-wrapper div.color-c div:nth-child(8) {
+  background-color: #80CBC4;
+}
+main .swatches .color-wrapper div.color-c div:nth-child(9) {
+  background-color: #B2DFDB;
+}
+main .swatches .color-wrapper div.color-z {
+  text-align: center;
+}
+main .swatches .color-wrapper div.color-z div:nth-child(1) {
+  background-color: #212121;
+}
+main .swatches .color-wrapper div.color-z div:nth-child(2) {
+  background-color: #424242;
+}
+main .swatches .color-wrapper div.color-z div:nth-child(3) {
+  background-color: #616161;
+}
+main .swatches .color-wrapper div.color-z div:nth-child(4) {
+  background-color: #757575;
+}
+main .swatches .color-wrapper div.color-z div:nth-child(5) {
+  background-color: #9E9E9E;
+}
+main .swatches .color-wrapper div.color-z div:nth-child(6) {
+  background-color: #BDBDBD;
+}
+main .swatches .color-wrapper div.color-z div:nth-child(7) {
+  background-color: #E0E0E0;
+}
+main .swatches .color-wrapper div.color-z div:nth-child(8) {
+  background-color: #EEEEEE;
+}
+main .swatches .color-wrapper div.color-z div:nth-child(9) {
+  background-color: #F5F5F5;
 }
 @media (max-width: 768px) {
-  main .background div {
-    width: 150px;
-    height: 150px;
-  }
-}
-@media (max-width: 425px) {
-  main .background div {
-    width: 150px;
-    height: 150px;
-  }
-}
-@media (max-width: 768px) {
-  main .background {
+  main .swatches {
     -webkit-flex-direction: column;
     flex-direction: column;
   }
 }
 @media (max-width: 425px) {
-  main .background {
+  main .swatches {
     -webkit-flex-direction: column;
     flex-direction: column;
   }
-}
-main .heading-style {
-  padding: 0 5%;
-}
-main .list-style {
-  padding: 0 5%;
-}
-main .list-style ul {
-  list-style: circle;
-}
-main .list-style ol {
-  list-style: decimal;
 }

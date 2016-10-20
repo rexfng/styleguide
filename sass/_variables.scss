@@ -3,9 +3,52 @@
 //		  COLOR    	   //
 //					   //
 /////////////////////////
-$color-1:rgba(0,0,0,0.5);
-$color-2:red;
-$accent-color:red;
+
+$color-a-100: #F8BBD0;
+$color-a-200: #F48FB1;
+$color-a-300: #F06292;
+$color-a-400: #EC407A;
+$color-a-500: #E91E63;
+$color-a-600: #D81B60;
+$color-a-700: #C2185B;
+$color-a-800: #AD1457;
+$color-a-900: #880E4F;
+$color-a: $color-a-500;
+
+$color-b-100: #C5CAE9;
+$color-b-200: #9FA8DA;
+$color-b-300: #7986CB;
+$color-b-400: #5C6BC0;
+$color-b-500: #3F51B5;
+$color-b-600: #3949AB;
+$color-b-700: #303F9F;
+$color-b-800: #283593;
+$color-b-900: #1A237E;
+$color-b: $color-b-500;
+
+$color-c-100: #B2DFDB;
+$color-c-200: #80CBC4;
+$color-c-300: #4DB6AC;
+$color-c-400: #26A69A;
+$color-c-500: #009688;
+$color-c-600: #00897B;
+$color-c-700: #00796B;
+$color-c-800: #00695C;
+$color-c-900: #004D40;
+$color-c: $color-c-500;
+
+$white: #FFFFFF; 
+$black: #000000;
+$color-z-100: #F5F5F5;
+$color-z-200: #EEEEEE;
+$color-z-300: #E0E0E0;
+$color-z-400: #BDBDBD;
+$color-z-500: #9E9E9E;
+$color-z-600: #757575;
+$color-z-700: #616161;
+$color-z-800: #424242;
+$color-z-900: #212121;
+$color-z: $color-z-800;
 
 /////////////////////////
 //					   //
@@ -15,30 +58,17 @@ $accent-color:red;
 $font-1:'Roboto', sans-serif;
 $font-2:'Merriweather', serif;
 $fontStyles : (
-	('h1', $font-1, 900, 2.5em, $color-1, normal, normal, 5px 0, 10px 0),
-	('h2', $font-1, 700, 2em, $color-1, normal, normal, 5px 0, 10px 0),
-	('h3', $font-1, 500, 1.75em, $color-1, normal, normal, 5px 0, 10px 0),
-	('h4', $font-1, 400, 1.5em, $color-1, normal, normal, 5px 0, 10px 0),
-	('h5', $font-1, 300, 1.25em, $color-1, normal, normal, 5px 0, 10px 0),
-	('h6', $font-1, 100, 1em, $color-1, normal, normal, 5px 0, 10px 0),
-	('p', $font-2, 200, 1em, $color-1, normal, normal, 5px 0, 5px 0 0),
-	('strong', $font-2, 400, 1em, $color-1, normal, normal, 5px 0, 5px 0 0),
-	('blockquote', $font-2, 400, 2em, $color-1, normal, normal, 2em 0 .5em, 0 ),
-	('li', $font-2, 400, 1em, $color-1, normal, normal, 0 0 10px 50px, 0 ),
+	('h1', $font-1, 900, 2.5em, $color-z, normal, normal, 5px 0, 10px 0),
+	('h2', $font-1, 700, 2em, $color-z, normal, normal, 5px 0, 10px 0),
+	('h3', $font-1, 500, 1.75em, $color-z, normal, normal, 5px 0, 10px 0),
+	('h4', $font-1, 400, 1.5em, $color-z, normal, normal, 5px 0, 10px 0),
+	('h5', $font-1, 300, 1.25em, $color-z, normal, normal, 5px 0, 10px 0),
+	('h6', $font-1, 100, 1em, $color-z, normal, normal, 5px 0, 10px 0),
+	('p', $font-2, 200, 1em, $color-z, normal, normal, 5px 0, 5px 0 0),
+	('strong', $font-2, 400, 1em, $color-z, normal, normal, 5px 0, 5px 0 0),
+	('blockquote', $font-2, 400, 2em, $color-z, normal, normal, 2em 0 .5em, 0 ),
+	('li', $font-2, 400, 1em, $color-z, normal, normal, 0 0 10px 50px, 0 ),
 );
-
-// fontstyles : 
-// 	((
-// 		tag, 
-// 		font-family, 
-// 		font-weight, 
-// 		font-size, 
-// 		color, 
-// 		line-height, 
-// 		letter-spacing, 
-// 		margin, 
-// 		padding
-// 	))
 
 /////////////////////////
 //					   //

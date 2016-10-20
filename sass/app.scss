@@ -10,7 +10,6 @@
 1. HOMEPAGE - index.html
 *********************/
 .meta{
-	text-align: center;
 	text-decoration: underline;
 }
 header {
@@ -29,47 +28,97 @@ main{
 	.section-1, .section-2{
 		@include grid(2,2,2,1,1);
 	}
-	.background{
-		padding:0 5%;
-		.box{
-			height:400px;
-			@include grid(1,1,1,1,1);
-			@include flex(space-around, center, row, wrap);
-			& div{
-				width:calc(50% - 50px);
-				height:50%;
-				color:white;
-				@include flex(center, center, row, wrap);
-
-				&:nth-child(1){
-					background-color: $color-1;
-				}
-				&:nth-child(2){
-					background-color: $color-2;
-				}
-			}
-		}
-		@include mediaQuery(0,0,1,1,1){
-			& div{
-				width: 150px;
-				height: 150px;
-			}
-		}
-		@include mediaQuery(0,0,0,1,1){
-			@include flex-direction(column);
-		}
-	}
 	.heading-style{
 		padding: 0 5%;
-		@include grid(1,1,1,1,1);
+		.font-list{
+			@include grid(1,1,1,1,1);
+			@include display-flex();
+			@include flex-wrap(wrap);
+		}
+		.heading-list{
+			text-align: center;
+				@include grid(2,1,1,1,1);
+		}
+		.heading-list.font-2{
+			h1,h2,h3,h4,h5,h6{
+				font-family: $font-2;
+			}
+		}
 	}
 	.list-style{
 		padding: 0 5%;
 		ul{
-			list-style: circle;
+			list-style: disc;
 		}
 		ol{
 			list-style: decimal;
+		}
+	}
+	.swatches{
+		padding:0 5%;
+		.color-wrapper{
+			@include flex(space-between, center, row, wrap);
+
+			& div div{
+				height:50px;
+				font-family:$font-1;
+				@include flex(center, center, row, wrap);
+			}
+			& div.color-a{
+				@include grid(4,4,2,2,1);
+				text-align: center;
+				& div:nth-child(1){ background-color: $color-a-900; }
+				& div:nth-child(2){ background-color: $color-a-800; }
+				& div:nth-child(3){ background-color: $color-a-700; }
+				& div:nth-child(4){ background-color: $color-a-600; }
+				& div:nth-child(5){ background-color: $color-a-500; }
+				& div:nth-child(6){ background-color: $color-a-400; }
+				& div:nth-child(7){ background-color: $color-a-300; }
+				& div:nth-child(8){ background-color: $color-a-200; }
+				& div:nth-child(9){ background-color: $color-a-100; }
+			}
+			& div.color-b{
+				@include grid(4,4,2,2,1);
+				text-align: center;
+				& div:nth-child(1){ background-color: $color-b-900; }
+				& div:nth-child(2){ background-color: $color-b-800; }
+				& div:nth-child(3){ background-color: $color-b-700; }
+				& div:nth-child(4){ background-color: $color-b-600; }
+				& div:nth-child(5){ background-color: $color-b-500; }
+				& div:nth-child(6){ background-color: $color-b-400; }
+				& div:nth-child(7){ background-color: $color-b-300; }
+				& div:nth-child(8){ background-color: $color-b-200; }
+				& div:nth-child(9){ background-color: $color-b-100; }
+			}
+			& div.color-c{
+				@include grid(4,4,2,2,1);
+				text-align: center;
+				& div:nth-child(1){ background-color: $color-c-900; }
+				& div:nth-child(2){ background-color: $color-c-800; }
+				& div:nth-child(3){ background-color: $color-c-700; }
+				& div:nth-child(4){ background-color: $color-c-600; }
+				& div:nth-child(5){ background-color: $color-c-500; }
+				& div:nth-child(6){ background-color: $color-c-400; }
+				& div:nth-child(7){ background-color: $color-c-300; }
+				& div:nth-child(8){ background-color: $color-c-200; }
+				& div:nth-child(9){ background-color: $color-c-100; }
+			}
+			& div.color-z{
+				@include grid(4,4,2,2,1);
+				text-align: center;
+				& div:nth-child(1){ background-color: $color-z-900; }
+				& div:nth-child(2){ background-color: $color-z-800; }
+				& div:nth-child(3){ background-color: $color-z-700; }
+				& div:nth-child(4){ background-color: $color-z-600; }
+				& div:nth-child(5){ background-color: $color-z-500; }
+				& div:nth-child(6){ background-color: $color-z-400; }
+				& div:nth-child(7){ background-color: $color-z-300; }
+				& div:nth-child(8){ background-color: $color-z-200; }
+				& div:nth-child(9){ background-color: $color-z-100; }
+			}
+		}
+		@include mediaQuery(0,0,0,1,1){
+			@include flex-direction(column);
 		}
 	}
 }
