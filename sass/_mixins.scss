@@ -1,24 +1,62 @@
 // @include flex($justify-content, $align-items, $flex-direction){
 
-$flex-direction : row !default;
-$justify-content : flex-start !default;
-$align-items : flex-start !default;
-$flex-wrap : wrap !default;
-
-@mixin flex($justify-content, $align-items, $flex-direction, $flex-wrap){
+@mixin flex($justify-content:flex-start, $align-items:flex-start, $flex-direction:row, $flex-wrap:wrap){
 	@include display-flex;
 	@include flex-direction($flex-direction);
 	@include justify-content($justify-content);
 	@include align-items($align-items);
 	@include flex-wrap($flex-wrap);
 };
+@mixin flexCenter(){
+	@include display-flex;
+	@include justify-content(center);
+	@include align-items(center);
+	@include flex-wrap(wrap);
+};
 
-@mixin grid($xxl, $xl, $l, $m, $s){
-	@extend .xxl-#{ $xxl };
-	@extend .xl-#{ $xl };
-	@extend .l-#{ $l };
-	@extend .m-#{ $m };
-	@extend .s-#{ $s };
+@mixin grid(
+	$xxl:null, 
+	$xl:null, 
+	$l:null, 
+	$m:null, 
+	$s:null,
+
+	$xxl-offset:null, 
+	$xl-offset:null, 
+	$l-offset:null, 
+	$m-offset:null, 
+	$s-offset:null
+	){
+	@if $xxl != null{
+		@extend %xxl-#{ $xxl };
+		@if $xxl-offset != null{
+			@extend %xxl-offset-#{ $xxl-offset };
+		}
+	}
+	@if $xl != null{
+		@extend %xl-#{ $xl };
+		@if $xl-offset != null{
+			@extend %xl-offset-#{ $xl-offset };
+		}
+	}
+	@if $l != null{
+		@extend %l-#{ $l };
+		@if $l-offset != null{
+			@extend %l-offset-#{ $l-offset };
+		}
+	}
+	@if $m != null{
+		@extend %m-#{ $m };
+		@if $m-offset != null{
+			@extend %m-offset-#{ $m-offset };
+		}
+	}
+	@if $s != null{
+		@extend %s-#{ $s };
+		@if $s-offset != null{
+			@extend %s-offset-#{ $s-offset };
+		}
+	}
 }
 @mixin mediaQuery($xxl, $xl, $l, $m, $s){
 	@if $xxl == 1{

@@ -179,559 +179,83 @@ blockquote > span {
   vertical-align: top;
 }
 
-@media screen and (max-width: 2560px) {
-  .xxl-1 {
-    width: 8.33333%;
-    box-sizing: border-box;
-  }
-
-  .xxl-2 {
-    width: 16.66667%;
-    box-sizing: border-box;
-  }
-
-  .xxl-3 {
-    width: 25%;
-    box-sizing: border-box;
-  }
-
-  .xxl-4 {
-    width: 33.33333%;
-    box-sizing: border-box;
-  }
-
-  .xxl-5 {
-    width: 41.66667%;
-    box-sizing: border-box;
-  }
-
-  .xxl-6, header > div, header > h1, main .section-1, main .section-2, main .heading-style .heading-list, main .swatches .color-wrapper div.color-a, main .swatches .color-wrapper div.color-b, main .swatches .color-wrapper div.color-c, main .swatches .color-wrapper div.color-z {
-    width: 50%;
-    box-sizing: border-box;
-  }
-
-  .xxl-7 {
-    width: 58.33333%;
-    box-sizing: border-box;
-  }
-
-  .xxl-8 {
-    width: 66.66667%;
-    box-sizing: border-box;
-  }
-
-  .xxl-9 {
-    width: 75%;
-    box-sizing: border-box;
-  }
-
-  .xxl-10 {
-    width: 83.33333%;
-    box-sizing: border-box;
-  }
-
-  .xxl-11 {
-    width: 91.66667%;
-    box-sizing: border-box;
-  }
-
-  .xxl-12, main .heading-style .font-list {
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  .xxl-offset-1 {
+@media screen and (max-width: 768px) and (min-width: 425px) {
+  .index-html header > div, .index-html header > h1, .index-html main .section-1, .index-html main .section-2 {
     margin-left: 8.33333%;
-  }
-
-  .xxl-offset-2 {
-    margin-left: 16.66667%;
-  }
-
-  .xxl-offset-3 {
-    margin-left: 25%;
-  }
-
-  .xxl-offset-4 {
-    margin-left: 33.33333%;
-  }
-
-  .xxl-offset-5 {
-    margin-left: 41.66667%;
-  }
-
-  .xxl-offset-6 {
-    margin-left: 50%;
-  }
-
-  .xxl-offset-7 {
-    margin-left: 58.33333%;
-  }
-
-  .xxl-offset-8 {
-    margin-left: 66.66667%;
-  }
-
-  .xxl-offset-9 {
-    margin-left: 75%;
-  }
-
-  .xxl-offset-10 {
-    margin-left: 83.33333%;
-  }
-
-  .xxl-offset-11 {
-    margin-left: 91.66667%;
-  }
-
-  .xxl-offset-12 {
-    margin-left: 100%;
-  }
-}
-@media screen and (max-width: 1440px) {
-  .xl-1 {
-    width: 8.33333%;
-    box-sizing: border-box;
-  }
-
-  .xl-2 {
-    width: 16.66667%;
-    box-sizing: border-box;
-  }
-
-  .xl-3 {
-    width: 25%;
-    box-sizing: border-box;
-  }
-
-  .xl-4 {
-    width: 33.33333%;
-    box-sizing: border-box;
-  }
-
-  .xl-5 {
-    width: 41.66667%;
-    box-sizing: border-box;
-  }
-
-  .xl-6, header > div, header > h1, main .section-1, main .section-2, main .swatches .color-wrapper div.color-a, main .swatches .color-wrapper div.color-b, main .swatches .color-wrapper div.color-c, main .swatches .color-wrapper div.color-z {
-    width: 50%;
-    box-sizing: border-box;
-  }
-
-  .xl-7 {
-    width: 58.33333%;
-    box-sizing: border-box;
-  }
-
-  .xl-8 {
-    width: 66.66667%;
-    box-sizing: border-box;
-  }
-
-  .xl-9 {
-    width: 75%;
-    box-sizing: border-box;
-  }
-
-  .xl-10 {
-    width: 83.33333%;
-    box-sizing: border-box;
-  }
-
-  .xl-11 {
-    width: 91.66667%;
-    box-sizing: border-box;
-  }
-
-  .xl-12, main .heading-style .font-list, main .heading-style .heading-list {
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  .xl-offset-1 {
-    margin-left: 8.33333%;
-  }
-
-  .xl-offset-2 {
-    margin-left: 16.66667%;
-  }
-
-  .xl-offset-3 {
-    margin-left: 25%;
-  }
-
-  .xl-offset-4 {
-    margin-left: 33.33333%;
-  }
-
-  .xl-offset-5 {
-    margin-left: 41.66667%;
-  }
-
-  .xl-offset-6 {
-    margin-left: 50%;
-  }
-
-  .xl-offset-7 {
-    margin-left: 58.33333%;
-  }
-
-  .xl-offset-8 {
-    margin-left: 66.66667%;
-  }
-
-  .xl-offset-9 {
-    margin-left: 75%;
-  }
-
-  .xl-offset-10 {
-    margin-left: 83.33333%;
-  }
-
-  .xl-offset-11 {
-    margin-left: 91.66667%;
-  }
-
-  .xl-offset-12 {
-    margin-left: 100%;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .l-1 {
-    width: 8.33333%;
-    box-sizing: border-box;
-  }
-
-  .l-2 {
-    width: 16.66667%;
-    box-sizing: border-box;
-  }
-
-  .l-3 {
-    width: 25%;
-    box-sizing: border-box;
-  }
-
-  .l-4 {
-    width: 33.33333%;
-    box-sizing: border-box;
-  }
-
-  .l-5 {
-    width: 41.66667%;
-    box-sizing: border-box;
-  }
-
-  .l-6, header > div, header > h1, main .section-1, main .section-2, main .swatches .color-wrapper div.color-a, main .swatches .color-wrapper div.color-b, main .swatches .color-wrapper div.color-c, main .swatches .color-wrapper div.color-z {
-    width: 50%;
-    box-sizing: border-box;
-  }
-
-  .l-7 {
-    width: 58.33333%;
-    box-sizing: border-box;
-  }
-
-  .l-8 {
-    width: 66.66667%;
-    box-sizing: border-box;
-  }
-
-  .l-9 {
-    width: 75%;
-    box-sizing: border-box;
-  }
-
-  .l-10 {
-    width: 83.33333%;
-    box-sizing: border-box;
-  }
-
-  .l-11 {
-    width: 91.66667%;
-    box-sizing: border-box;
-  }
-
-  .l-12, main .heading-style .font-list, main .heading-style .heading-list {
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  .l-offset-1 {
-    margin-left: 8.33333%;
-  }
-
-  .l-offset-2 {
-    margin-left: 16.66667%;
-  }
-
-  .l-offset-3 {
-    margin-left: 25%;
-  }
-
-  .l-offset-4 {
-    margin-left: 33.33333%;
-  }
-
-  .l-offset-5 {
-    margin-left: 41.66667%;
-  }
-
-  .l-offset-6 {
-    margin-left: 50%;
-  }
-
-  .l-offset-7 {
-    margin-left: 58.33333%;
-  }
-
-  .l-offset-8 {
-    margin-left: 66.66667%;
-  }
-
-  .l-offset-9 {
-    margin-left: 75%;
-  }
-
-  .l-offset-10 {
-    margin-left: 83.33333%;
-  }
-
-  .l-offset-11 {
-    margin-left: 91.66667%;
-  }
-
-  .l-offset-12 {
-    margin-left: 100%;
-  }
-}
-@media screen and (max-width: 768px) {
-  .m-1 {
-    width: 8.33333%;
-    box-sizing: border-box;
-  }
-
-  .m-2 {
-    width: 16.66667%;
-    box-sizing: border-box;
-  }
-
-  .m-3 {
-    width: 25%;
-    box-sizing: border-box;
-  }
-
-  .m-4 {
-    width: 33.33333%;
-    box-sizing: border-box;
-  }
-
-  .m-5 {
-    width: 41.66667%;
-    box-sizing: border-box;
-  }
-
-  .m-6, main .swatches .color-wrapper div.color-a, main .swatches .color-wrapper div.color-b, main .swatches .color-wrapper div.color-c, main .swatches .color-wrapper div.color-z {
-    width: 50%;
-    box-sizing: border-box;
-  }
-
-  .m-7 {
-    width: 58.33333%;
-    box-sizing: border-box;
-  }
-
-  .m-8 {
-    width: 66.66667%;
-    box-sizing: border-box;
-  }
-
-  .m-9 {
-    width: 75%;
-    box-sizing: border-box;
-  }
-
-  .m-10 {
-    width: 83.33333%;
-    box-sizing: border-box;
-  }
-
-  .m-11 {
-    width: 91.66667%;
-    box-sizing: border-box;
-  }
-
-  .m-12, header > div, header > h1, main .section-1, main .section-2, main .heading-style .font-list, main .heading-style .heading-list {
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  .m-offset-1 {
-    margin-left: 8.33333%;
-  }
-
-  .m-offset-2 {
-    margin-left: 16.66667%;
-  }
-
-  .m-offset-3 {
-    margin-left: 25%;
-  }
-
-  .m-offset-4 {
-    margin-left: 33.33333%;
-  }
-
-  .m-offset-5 {
-    margin-left: 41.66667%;
-  }
-
-  .m-offset-6 {
-    margin-left: 50%;
-  }
-
-  .m-offset-7 {
-    margin-left: 58.33333%;
-  }
-
-  .m-offset-8 {
-    margin-left: 66.66667%;
-  }
-
-  .m-offset-9 {
-    margin-left: 75%;
-  }
-
-  .m-offset-10 {
-    margin-left: 83.33333%;
-  }
-
-  .m-offset-11 {
-    margin-left: 91.66667%;
-  }
-
-  .m-offset-12 {
-    margin-left: 100%;
   }
 }
 @media screen and (max-width: 425px) {
-  .s-1 {
-    width: 8.33333%;
-    box-sizing: border-box;
+  .index-html header > div, .index-html header > h1 {
+    margin-left: 8.33333%;
   }
-
-  .s-2 {
-    width: 16.66667%;
-    box-sizing: border-box;
-  }
-
-  .s-3 {
-    width: 25%;
-    box-sizing: border-box;
-  }
-
-  .s-4 {
-    width: 33.33333%;
-    box-sizing: border-box;
-  }
-
-  .s-5 {
-    width: 41.66667%;
-    box-sizing: border-box;
-  }
-
-  .s-6 {
+}
+@media screen and (max-width: 2560px) {
+  .index-html header > div, .index-html header > h1, .index-html main .section-1, .index-html main .section-2, .index-html main .heading-style .heading-list, .index-html main .swatches .color-wrapper div.color-a, .index-html main .swatches .color-wrapper div.color-b, .index-html main .swatches .color-wrapper div.color-c, .index-html main .swatches .color-wrapper div.color-z {
     width: 50%;
     box-sizing: border-box;
   }
 
-  .s-7 {
-    width: 58.33333%;
+  .index-html main .heading-style .font-list {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .index-html header > div, .index-html header > h1, .index-html main .section-1, .index-html main .section-2, .index-html main .swatches .color-wrapper div.color-a, .index-html main .swatches .color-wrapper div.color-b, .index-html main .swatches .color-wrapper div.color-c, .index-html main .swatches .color-wrapper div.color-z {
+    width: 50%;
     box-sizing: border-box;
   }
 
-  .s-8 {
-    width: 66.66667%;
+  .index-html main .heading-style .font-list, .index-html main .heading-style .heading-list {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .index-html header > div, .index-html header > h1, .index-html main .section-1, .index-html main .section-2, .index-html main .swatches .color-wrapper div.color-a, .index-html main .swatches .color-wrapper div.color-b, .index-html main .swatches .color-wrapper div.color-c, .index-html main .swatches .color-wrapper div.color-z {
+    width: 50%;
     box-sizing: border-box;
   }
 
-  .s-9 {
-    width: 75%;
+  .index-html main .heading-style .font-list, .index-html main .heading-style .heading-list {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 768px) {
+  .index-html main .swatches .color-wrapper div.color-a, .index-html main .swatches .color-wrapper div.color-b, .index-html main .swatches .color-wrapper div.color-c, .index-html main .swatches .color-wrapper div.color-z {
+    width: 50%;
     box-sizing: border-box;
   }
 
-  .s-10 {
+  .index-html header > div, .index-html header > h1, .index-html main .section-1, .index-html main .section-2 {
     width: 83.33333%;
     box-sizing: border-box;
   }
 
-  .s-11 {
-    width: 91.66667%;
-    box-sizing: border-box;
-  }
-
-  .s-12, header > div, header > h1, main .section-1, main .section-2, main .heading-style .font-list, main .heading-style .heading-list, main .swatches .color-wrapper div.color-a, main .swatches .color-wrapper div.color-b, main .swatches .color-wrapper div.color-c, main .swatches .color-wrapper div.color-z {
+  .index-html main .heading-style .font-list, .index-html main .heading-style .heading-list {
     width: 100%;
     box-sizing: border-box;
   }
-
-  .s-offset-1 {
-    margin-left: 8.33333%;
+}
+@media screen and (max-width: 425px) {
+  .index-html header > div, .index-html header > h1 {
+    width: 83.33333%;
+    box-sizing: border-box;
   }
 
-  .s-offset-2 {
-    margin-left: 16.66667%;
-  }
-
-  .s-offset-3 {
-    margin-left: 25%;
-  }
-
-  .s-offset-4 {
-    margin-left: 33.33333%;
-  }
-
-  .s-offset-5 {
-    margin-left: 41.66667%;
-  }
-
-  .s-offset-6 {
-    margin-left: 50%;
-  }
-
-  .s-offset-7 {
-    margin-left: 58.33333%;
-  }
-
-  .s-offset-8 {
-    margin-left: 66.66667%;
-  }
-
-  .s-offset-9 {
-    margin-left: 75%;
-  }
-
-  .s-offset-10 {
-    margin-left: 83.33333%;
-  }
-
-  .s-offset-11 {
-    margin-left: 91.66667%;
-  }
-
-  .s-offset-12 {
-    margin-left: 100%;
+  .index-html main .section-1, .index-html main .section-2, .index-html main .heading-style .font-list, .index-html main .heading-style .heading-list, .index-html main .swatches .color-wrapper div.color-a, .index-html main .swatches .color-wrapper div.color-b, .index-html main .swatches .color-wrapper div.color-c, .index-html main .swatches .color-wrapper div.color-z {
+    width: 100%;
+    box-sizing: border-box;
   }
 }
 /*********************
 1. HOMEPAGE - index.html
 *********************/
-.meta {
+.index-html .meta {
   text-decoration: underline;
 }
-
-.tag {
+.index-html .tag {
   width: 100%;
   height: 60px;
   position: fixed;
@@ -740,8 +264,6 @@ blockquote > span {
   padding: 0;
   display: -webkit-flex;
   display: flex;
-  -webkit-flex-direction: row;
-  flex-direction: row;
   -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
@@ -750,50 +272,47 @@ blockquote > span {
   flex-wrap: wrap;
   background-color: #EEEEEE;
 }
-.tag div {
+.index-html .tag div {
   color: #000000;
   font-family: "Roboto", sans-serif;
   padding: 0 10px;
 }
 @media only screen and (max-width: 2560px) and (min-width: 1440px) {
-  .tag div {
+  .index-html .tag div {
     font-weight: 200;
   }
-  .tag div:nth-child(1) {
+  .index-html .tag div:nth-child(1) {
     font-weight: 900;
   }
 }
 @media only screen and (max-width: 1440px) and (min-width: 1024px) {
-  .tag div {
+  .index-html .tag div {
     font-weight: 200;
   }
-  .tag div:nth-child(2) {
+  .index-html .tag div:nth-child(2) {
     font-weight: 900;
   }
 }
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
-  .tag div:nth-child(3) {
+  .index-html .tag div:nth-child(3) {
     font-weight: 900;
   }
 }
 @media only screen and (max-width: 768px) and (min-width: 425px) {
-  .tag div:nth-child(4) {
+  .index-html .tag div:nth-child(4) {
     font-weight: 900;
   }
 }
 @media only screen and (max-width: 425px) {
-  .tag div:nth-child(5) {
+  .index-html .tag div:nth-child(5) {
     font-weight: 900;
   }
 }
-
-header {
+.index-html header {
   margin-top: 60px;
   padding: 0 5%;
   display: -webkit-flex;
   display: flex;
-  -webkit-flex-direction: row;
-  flex-direction: row;
   -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
@@ -801,8 +320,35 @@ header {
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
 }
-
-main {
+@media only screen and (max-width: 768px) and (min-width: 425px) {
+  .index-html header {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .index-html header {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+.index-html main {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: row;
@@ -815,7 +361,7 @@ main {
   flex-wrap: wrap;
 }
 @media only screen and (max-width: 768px) and (min-width: 425px) {
-  main {
+  .index-html main {
     display: -webkit-flex;
     display: flex;
     -webkit-flex-direction: column;
@@ -829,7 +375,7 @@ main {
   }
 }
 @media only screen and (max-width: 425px) {
-  main {
+  .index-html main {
     display: -webkit-flex;
     display: flex;
     -webkit-flex-direction: column;
@@ -842,34 +388,40 @@ main {
     flex-wrap: wrap;
   }
 }
-main .heading-style {
+.index-html main .heading-style {
   padding: 0 5%;
 }
-main .heading-style .font-list {
+.index-html main .heading-style .font-list {
   display: -webkit-flex;
   display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
 }
-main .heading-style .heading-list {
+.index-html main .heading-style .heading-list {
   text-align: center;
 }
-main .heading-style .heading-list.font-2 h1, main .heading-style .heading-list.font-2 h2, main .heading-style .heading-list.font-2 h3, main .heading-style .heading-list.font-2 h4, main .heading-style .heading-list.font-2 h5, main .heading-style .heading-list.font-2 h6 {
+.index-html main .heading-style .heading-list.font-2 h1, .index-html main .heading-style .heading-list.font-2 h2, .index-html main .heading-style .heading-list.font-2 h3, .index-html main .heading-style .heading-list.font-2 h4, .index-html main .heading-style .heading-list.font-2 h5, .index-html main .heading-style .heading-list.font-2 h6 {
   font-family: "Merriweather", serif;
 }
-main .list-style {
+.index-html main .list-style {
   padding: 0 5%;
 }
-main .list-style ul {
+.index-html main .list-style ul {
   list-style: disc;
 }
-main .list-style ol {
+.index-html main .list-style ol {
   list-style: decimal;
 }
-main .swatches {
+.index-html main .swatches {
   padding: 0 5%;
 }
-main .swatches .color-wrapper {
+.index-html main .swatches .color-wrapper {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: row;
@@ -881,13 +433,11 @@ main .swatches .color-wrapper {
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
 }
-main .swatches .color-wrapper div div {
+.index-html main .swatches .color-wrapper div div {
   height: 50px;
   font-family: "Roboto", sans-serif;
   display: -webkit-flex;
   display: flex;
-  -webkit-flex-direction: row;
-  flex-direction: row;
   -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
@@ -895,146 +445,146 @@ main .swatches .color-wrapper div div {
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
 }
-main .swatches .color-wrapper div.color-a {
+.index-html main .swatches .color-wrapper div.color-a {
   text-align: center;
 }
-main .swatches .color-wrapper div.color-a div:nth-child(1) {
+.index-html main .swatches .color-wrapper div.color-a div:nth-child(1) {
   background-color: #880E4F;
   color: #FFFFFF;
 }
-main .swatches .color-wrapper div.color-a div:nth-child(2) {
+.index-html main .swatches .color-wrapper div.color-a div:nth-child(2) {
   background-color: #AD1457;
   color: #FFFFFF;
 }
-main .swatches .color-wrapper div.color-a div:nth-child(3) {
+.index-html main .swatches .color-wrapper div.color-a div:nth-child(3) {
   background-color: #C2185B;
   color: #FFFFFF;
 }
-main .swatches .color-wrapper div.color-a div:nth-child(4) {
+.index-html main .swatches .color-wrapper div.color-a div:nth-child(4) {
   background-color: #D81B60;
 }
-main .swatches .color-wrapper div.color-a div:nth-child(5) {
+.index-html main .swatches .color-wrapper div.color-a div:nth-child(5) {
   background-color: #E91E63;
 }
-main .swatches .color-wrapper div.color-a div:nth-child(6) {
+.index-html main .swatches .color-wrapper div.color-a div:nth-child(6) {
   background-color: #EC407A;
 }
-main .swatches .color-wrapper div.color-a div:nth-child(7) {
+.index-html main .swatches .color-wrapper div.color-a div:nth-child(7) {
   background-color: #F06292;
 }
-main .swatches .color-wrapper div.color-a div:nth-child(8) {
+.index-html main .swatches .color-wrapper div.color-a div:nth-child(8) {
   background-color: #F48FB1;
 }
-main .swatches .color-wrapper div.color-a div:nth-child(9) {
+.index-html main .swatches .color-wrapper div.color-a div:nth-child(9) {
   background-color: #F8BBD0;
 }
-main .swatches .color-wrapper div.color-b {
+.index-html main .swatches .color-wrapper div.color-b {
   text-align: center;
 }
-main .swatches .color-wrapper div.color-b div:nth-child(1) {
+.index-html main .swatches .color-wrapper div.color-b div:nth-child(1) {
   background-color: #1A237E;
   color: #FFFFFF;
 }
-main .swatches .color-wrapper div.color-b div:nth-child(2) {
+.index-html main .swatches .color-wrapper div.color-b div:nth-child(2) {
   background-color: #283593;
   color: #FFFFFF;
 }
-main .swatches .color-wrapper div.color-b div:nth-child(3) {
+.index-html main .swatches .color-wrapper div.color-b div:nth-child(3) {
   background-color: #303F9F;
   color: #FFFFFF;
 }
-main .swatches .color-wrapper div.color-b div:nth-child(4) {
+.index-html main .swatches .color-wrapper div.color-b div:nth-child(4) {
   background-color: #3949AB;
 }
-main .swatches .color-wrapper div.color-b div:nth-child(5) {
+.index-html main .swatches .color-wrapper div.color-b div:nth-child(5) {
   background-color: #3F51B5;
 }
-main .swatches .color-wrapper div.color-b div:nth-child(6) {
+.index-html main .swatches .color-wrapper div.color-b div:nth-child(6) {
   background-color: #5C6BC0;
 }
-main .swatches .color-wrapper div.color-b div:nth-child(7) {
+.index-html main .swatches .color-wrapper div.color-b div:nth-child(7) {
   background-color: #7986CB;
 }
-main .swatches .color-wrapper div.color-b div:nth-child(8) {
+.index-html main .swatches .color-wrapper div.color-b div:nth-child(8) {
   background-color: #9FA8DA;
 }
-main .swatches .color-wrapper div.color-b div:nth-child(9) {
+.index-html main .swatches .color-wrapper div.color-b div:nth-child(9) {
   background-color: #C5CAE9;
 }
-main .swatches .color-wrapper div.color-c {
+.index-html main .swatches .color-wrapper div.color-c {
   text-align: center;
 }
-main .swatches .color-wrapper div.color-c div:nth-child(1) {
+.index-html main .swatches .color-wrapper div.color-c div:nth-child(1) {
   background-color: #004D40;
   color: #FFFFFF;
 }
-main .swatches .color-wrapper div.color-c div:nth-child(2) {
+.index-html main .swatches .color-wrapper div.color-c div:nth-child(2) {
   background-color: #00695C;
   color: #FFFFFF;
 }
-main .swatches .color-wrapper div.color-c div:nth-child(3) {
+.index-html main .swatches .color-wrapper div.color-c div:nth-child(3) {
   background-color: #00796B;
   color: #FFFFFF;
 }
-main .swatches .color-wrapper div.color-c div:nth-child(4) {
+.index-html main .swatches .color-wrapper div.color-c div:nth-child(4) {
   background-color: #00897B;
 }
-main .swatches .color-wrapper div.color-c div:nth-child(5) {
+.index-html main .swatches .color-wrapper div.color-c div:nth-child(5) {
   background-color: #009688;
 }
-main .swatches .color-wrapper div.color-c div:nth-child(6) {
+.index-html main .swatches .color-wrapper div.color-c div:nth-child(6) {
   background-color: #26A69A;
 }
-main .swatches .color-wrapper div.color-c div:nth-child(7) {
+.index-html main .swatches .color-wrapper div.color-c div:nth-child(7) {
   background-color: #4DB6AC;
 }
-main .swatches .color-wrapper div.color-c div:nth-child(8) {
+.index-html main .swatches .color-wrapper div.color-c div:nth-child(8) {
   background-color: #80CBC4;
 }
-main .swatches .color-wrapper div.color-c div:nth-child(9) {
+.index-html main .swatches .color-wrapper div.color-c div:nth-child(9) {
   background-color: #B2DFDB;
 }
-main .swatches .color-wrapper div.color-z {
+.index-html main .swatches .color-wrapper div.color-z {
   text-align: center;
 }
-main .swatches .color-wrapper div.color-z div:nth-child(1) {
+.index-html main .swatches .color-wrapper div.color-z div:nth-child(1) {
   background-color: #212121;
   color: #FFFFFF;
 }
-main .swatches .color-wrapper div.color-z div:nth-child(2) {
+.index-html main .swatches .color-wrapper div.color-z div:nth-child(2) {
   background-color: #424242;
   color: #FFFFFF;
 }
-main .swatches .color-wrapper div.color-z div:nth-child(3) {
+.index-html main .swatches .color-wrapper div.color-z div:nth-child(3) {
   background-color: #616161;
   color: #FFFFFF;
 }
-main .swatches .color-wrapper div.color-z div:nth-child(4) {
+.index-html main .swatches .color-wrapper div.color-z div:nth-child(4) {
   background-color: #757575;
 }
-main .swatches .color-wrapper div.color-z div:nth-child(5) {
+.index-html main .swatches .color-wrapper div.color-z div:nth-child(5) {
   background-color: #9E9E9E;
 }
-main .swatches .color-wrapper div.color-z div:nth-child(6) {
+.index-html main .swatches .color-wrapper div.color-z div:nth-child(6) {
   background-color: #BDBDBD;
 }
-main .swatches .color-wrapper div.color-z div:nth-child(7) {
+.index-html main .swatches .color-wrapper div.color-z div:nth-child(7) {
   background-color: #E0E0E0;
 }
-main .swatches .color-wrapper div.color-z div:nth-child(8) {
+.index-html main .swatches .color-wrapper div.color-z div:nth-child(8) {
   background-color: #EEEEEE;
 }
-main .swatches .color-wrapper div.color-z div:nth-child(9) {
+.index-html main .swatches .color-wrapper div.color-z div:nth-child(9) {
   background-color: #F5F5F5;
 }
 @media only screen and (max-width: 768px) and (min-width: 425px) {
-  main .swatches {
+  .index-html main .swatches {
     -webkit-flex-direction: column;
     flex-direction: column;
   }
 }
 @media only screen and (max-width: 425px) {
-  main .swatches {
+  .index-html main .swatches {
     -webkit-flex-direction: column;
     flex-direction: column;
   }
