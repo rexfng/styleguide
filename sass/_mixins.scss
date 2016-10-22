@@ -1,19 +1,16 @@
-// @include flex($justify-content, $align-items, $flex-direction){
-
 @mixin flex($justify-content:flex-start, $align-items:flex-start, $flex-direction:row, $flex-wrap:wrap){
 	@include display-flex;
 	@include flex-direction($flex-direction);
 	@include justify-content($justify-content);
 	@include align-items($align-items);
 	@include flex-wrap($flex-wrap);
-};
+}
 @mixin flexCenter(){
 	@include display-flex;
 	@include justify-content(center);
 	@include align-items(center);
 	@include flex-wrap(wrap);
-};
-
+}
 @mixin grid(
 	$xxl:null, 
 	$xl:null, 
@@ -25,7 +22,11 @@
 	$xl-offset:null, 
 	$l-offset:null, 
 	$m-offset:null, 
-	$s-offset:null
+	$s-offset:null,
+	$margin-top:null,
+	$padding-top:null,
+	$margin-bottom:null,
+	$padding-bottom:null
 	){
 	@if $xxl != null{
 		@extend %xxl-#{ $xxl };
@@ -56,6 +57,18 @@
 		@if $s-offset != null{
 			@extend %s-offset-#{ $s-offset };
 		}
+	}
+	@if $margin-top != null{
+		margin-top: $margin-top;
+	}
+	@if $padding-top != null{
+		padding-top: $padding-top;
+	}
+	@if $margin-bottom != null{
+		margin-bottom: $margin-bottom;
+	}
+	@if $padding-bottom != null{
+		padding-bottom: $padding-bottom;
 	}
 }
 @mixin mediaQuery($xxl, $xl, $l, $m, $s){

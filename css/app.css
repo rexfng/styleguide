@@ -55,10 +55,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-ul {
-  margin-bottom: 1em;
-}
-
 h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
@@ -169,16 +165,6 @@ li {
   padding: 0;
 }
 
-blockquote > span {
-  color: #E91E63;
-  font-size: 3em;
-  line-height: .1em;
-  padding: 0 0.1em 0 0;
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  vertical-align: top;
-}
-
 @media screen and (max-width: 768px) and (min-width: 425px) {
   .index-html header > div, .index-html header > h1, .index-html main .section-1, .index-html main .section-2 {
     margin-left: 8.33333%;
@@ -249,67 +235,10 @@ blockquote > span {
     box-sizing: border-box;
   }
 }
-/*********************
-1. HOMEPAGE - index.html
-*********************/
-.index-html .meta {
+.index-html .meta-heading-heading {
   text-decoration: underline;
 }
-.index-html .tag {
-  width: 100%;
-  height: 60px;
-  position: fixed;
-  top: 0;
-  right: 0;
-  padding: 0;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  background-color: #EEEEEE;
-}
-.index-html .tag div {
-  color: #000000;
-  font-family: "Roboto", sans-serif;
-  padding: 0 10px;
-}
-@media only screen and (max-width: 2560px) and (min-width: 1440px) {
-  .index-html .tag div {
-    font-weight: 200;
-  }
-  .index-html .tag div:nth-child(1) {
-    font-weight: 900;
-  }
-}
-@media only screen and (max-width: 1440px) and (min-width: 1024px) {
-  .index-html .tag div {
-    font-weight: 200;
-  }
-  .index-html .tag div:nth-child(2) {
-    font-weight: 900;
-  }
-}
-@media only screen and (max-width: 1024px) and (min-width: 768px) {
-  .index-html .tag div:nth-child(3) {
-    font-weight: 900;
-  }
-}
-@media only screen and (max-width: 768px) and (min-width: 425px) {
-  .index-html .tag div:nth-child(4) {
-    font-weight: 900;
-  }
-}
-@media only screen and (max-width: 425px) {
-  .index-html .tag div:nth-child(5) {
-    font-weight: 900;
-  }
-}
 .index-html header {
-  margin-top: 60px;
   padding: 0 5%;
   display: -webkit-flex;
   display: flex;

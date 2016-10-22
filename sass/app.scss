@@ -1,63 +1,12 @@
-@import "compass/reset";
-@import "compass";
-@import "variables";
-@import "global"; 
-@import "mixins";
+@import 'import';
 
-@import url('https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
- 
-/*********************
-1. HOMEPAGE - index.html
-*********************/
 .index-html{
-	.meta{
+	@extend %Dropcap, %Screen-size-checker;
+
+	.meta-heading-heading{
 		text-decoration: underline;
 	}
-	.tag{
-		width: 100%;
-		height:60px;
-		position: fixed;
-		top:0;
-		right:0;
-		padding:0;
-		@include flexCenter();
-		background-color:$color-z-200;
-		& div{
-			color:$black;
-			font-family: $font-1;
-			padding: 0 10px;
-			@include mediaQuery(1,0,0,0,0){
-				&:nth-child(1){
-					font-weight: 900;
-				}
-				font-weight: 200;
-			}
-			@include mediaQuery(0,1,0,0,0){
-				&:nth-child(2){
-					font-weight: 900;
-				}
-				font-weight: 200;
-			}
-			@include mediaQuery(0,0,1,0,0){
-				&:nth-child(3){
-					font-weight: 900;
-				}
-			}
-			@include mediaQuery(0,0,0,1,0){
-				&:nth-child(4){
-					font-weight: 900;
-				}
-			}
-			@include mediaQuery(0,0,0,0,1){
-				&:nth-child(5){
-					font-weight: 900;
-				}
-			}
-		}
-
-	}
 	header {
-		margin-top: 60px;
 		padding:0 5%;
 		@include flexCenter();
 		& > div, 

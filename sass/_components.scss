@@ -1,0 +1,65 @@
+%utils{
+	%Screen-size-checker{
+		.screen-size-checker{
+			width: 100%;
+			height:60px;
+			position: fixed;
+			bottom:0;
+			right:0;
+			padding:0;
+			@include flexCenter();
+			background-color:$black;
+			& div{
+				color:$white;
+				font-family: $font-1;
+				padding: 0 10px;
+				@include mediaQuery(1,0,0,0,0){
+					&:nth-child(1){
+						font-weight: 900;
+						font-size: 1.5em;
+					}
+					font-weight: 200;
+				}
+				@include mediaQuery(0,1,0,0,0){
+					&:nth-child(2){
+						font-weight: 900;
+						font-size: 1.5em;
+					}
+					font-weight: 200;
+				}
+				@include mediaQuery(0,0,1,0,0){
+					&:nth-child(3){
+						font-weight: 900;
+						font-size: 1.5em;
+					}
+				}
+				@include mediaQuery(0,0,0,1,0){
+					&:nth-child(4){
+						font-weight: 900;
+						font-size: 1.5em;
+					}
+				}
+				@include mediaQuery(0,0,0,0,1){
+					&:nth-child(5){
+						font-weight: 900;
+						font-size: 1.5em;
+					}
+				}
+			}
+
+		}
+	}
+}
+%style{
+	%Dropcap{
+		blockquote > span{
+			color: $color-a; 
+			font-size: 3em; 
+			line-height: .1em; 
+			padding: 0 .1em 0 0 ;
+			font-family: $font-1; 
+			font-weight: 900;
+			vertical-align: top;
+		}
+	}
+}

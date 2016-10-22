@@ -4,11 +4,7 @@
 //					   //
 /////////////////////////
 
-
 //font style
-ul{
-	margin-bottom:1em;
-}
 
 @each $font in $fontStyles{
 	#{nth($font,1)}{
@@ -21,16 +17,6 @@ ul{
 		margin: nth($font,8);
 		padding: nth($font,9);
 	}
-}
-//dropcap 
-blockquote > span{
-	color: $color-a; 
-	font-size: 3em; 
-	line-height: .1em; 
-	padding: 0 .1em 0 0 ;
-	font-family: $font-1; 
-	font-weight: 900;
-	vertical-align: top;
 }
 //grid class
 
