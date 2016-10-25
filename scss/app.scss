@@ -14,13 +14,13 @@
 			@include grid(6,6,6,10,10, $m-offset:1, $s-offset:1);
 		}
 		@include mediaQuery(0,0,0,1,1){
-			@include flex($flex-direction:column);
+			flex-direction: column;
 		}
 	}
 	main{
 		@include flex();
 		@include mediaQuery(0,0,0,1,1){
-			@include flex($flex-direction:column);
+			flex-direction: column;
 		}
 		.section-1, .section-2{
 			@include grid(6,4,4,10,10, 0,1,1,1,1);
@@ -114,7 +114,7 @@
 				}
 			}
 			@include mediaQuery(0,0,0,1,1){
-				@include flex-direction(column);
+				flex-direction: column;
 			}
 		}
 	}	

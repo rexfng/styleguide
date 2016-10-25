@@ -1,15 +1,15 @@
 @mixin flex($justify-content:flex-start, $align-items:flex-start, $flex-direction:row, $flex-wrap:wrap){
-	@include display-flex;
-	@include flex-direction($flex-direction);
-	@include justify-content($justify-content);
-	@include align-items($align-items);
-	@include flex-wrap($flex-wrap);
+	display: flex;
+	flex-direction: $flex-direction;
+	justify-content: $justify-content;
+	align-items: $align-items;
+	flex-wrap: $flex-wrap;
 }
 @mixin flexCenter(){
-	@include display-flex;
-	@include justify-content(center);
-	@include align-items(center);
-	@include flex-wrap(wrap);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
 }
 @mixin grid(
 	$xxl:null, 
