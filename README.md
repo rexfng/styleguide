@@ -1,5 +1,6 @@
 #STYLEGUIDE SCSS BOLIERPLATE
-Description - This boilerplate uses Compass SCSS framework with a few helpful mixins such as custom column grid (any columns you want for each screen sizes), media query helpers, and flexbox shortcuts. This boilerplate also includes an index.html file as a style guide. 
+Description - This boilerplate uses SCSS with a few helpful mixins such as custom column grid (any columns you want for each screen sizes), media query helpers, and flexbox shortcuts. This boilerplate also includes an index.html file as a style guide.
+
 ## Folder Structure
 ```
 | — sass
@@ -7,19 +8,23 @@ Description - This boilerplate uses Compass SCSS framework with a few helpful mi
 	 | —  _global.scss
 	 | —  _mixins.scss
 	 | —  app.scss
-| —  app.css
+	 | - _normalize.scss
+	 | - _components.scss
+| — app.css
 | — config.rb
 | — index.html
 ```
 
 ## Folder Structure Explained
+0. \_normalize.scss - https://necolas.github.io/normalize.css/ v.5.0.0
 1. \_global.scss - Includes all lower level css that affects the entire projects. i.e. blockquotes, h1, p 
 2. \_mixins.scss - Includes all custom mixins css helpers that are used in the project. For this boilerplate, grid, breakpoints(media query), and flexbox mixins are located here.
 3.  \_variables.scss - Defines all your global variables here including colors, fonts, grid & media query settings.
-4. app.scss - This file stores all the layout and specific css codes for all the pages. It is recommended to use css comment to separate codes from different pages.
-5. app.css - You should never have to touch this file as it is a compiled file.
-6. config.rb - Stores all SCSS settings.
-7. index.html - Contains html codes to help show off the current styles being implemented in this project. 
+4.  \_components.scss - Defines all commonly use components in the app. Use @extend method in app.scss to instantiate the components.
+5. app.scss - This file stores all the layout and specific css codes for all the pages. It is recommended to use css comment to separate codes from different pages.
+6. app.css - You should never have to touch this file as it is a compiled file.
+7. config.rb - Stores all SCSS settings.
+8. index.html - Contains html codes to help show off the current styles being implemented in this project. 
 
 ##Variables
 You can customize it for every screen size below by changing the grid size value.  ie. ('xxl', 2560px, $gridSize/ 2). Unfortunately due to sass’s limitation, if you wish to add more than 5 breakpoints, you will have to adjust grid and mediaQuery mixins accordingly.
