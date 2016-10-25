@@ -31,7 +31,7 @@ $border-box-mode: false !default; // check if $breakpoints is defined
 			$min-list: nth($breakpoints, $i + 1);
 			$min: nth($min-list, 2);
 			@media screen and (max-width: $max) and (min-width: $min){
-				@for $count from 1 through $gridSize{
+				@for $count from 0 through $gridSize{
 					%#{ $size }-offset-#{ $count }{
 						margin-left:  100% / $gridSize * $count;
 					};	
@@ -41,7 +41,7 @@ $border-box-mode: false !default; // check if $breakpoints is defined
 		@if $i == 5{
 			$min: 1px;
 			@media screen and (max-width: $max){
-				@for $count from 1 through $gridSize{
+				@for $count from 0 through $gridSize{
 					%#{ $size }-offset-#{ $count }{
 						margin-left:  100% / $gridSize * $count;
 					};	
@@ -51,7 +51,7 @@ $border-box-mode: false !default; // check if $breakpoints is defined
 	}
 	@each $list in $breakpoints{
 		@media screen and (max-width: nth($list, 2)) {
-			@for $i from 1 through $gridSize{
+			@for $i from 0 through $gridSize{
 				%#{ nth($list, 1) }-#{ $i }{
 					width: 100% / $gridSize * $i;
 					@if $border-box-mode{

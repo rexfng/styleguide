@@ -1,7 +1,7 @@
 @import 'import';
 
 .index-html{
-	@extend %Dropcap, %Screen-size-checker;
+	@extend %Screen-size-checker;
 
 	.meta-heading-heading{
 		text-decoration: underline;
@@ -23,7 +23,7 @@
 			@include flex($flex-direction:column);
 		}
 		.section-1, .section-2{
-			@include grid(6,6,6,10,12, $m-offset:1);
+			@include grid(6,4,4,10,10, 0,1,1,1,1);
 		}
 		.heading-style{
 			padding: 0 5%;
